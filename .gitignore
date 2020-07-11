@@ -2,3 +2,5 @@
 node_modules
 vendor
 .htaccess
+assets/css
+assets/js
