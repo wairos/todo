@@ -1,0 +1,59 @@
+/* Breakpoints */
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+@mixin max-xs {
+  @media (max-width: #{$xs - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin max-sm {
+  @media (max-width: #{$sm - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin min-md {
+  @media (min-width: #{$md}) {
+    @content;
+  }
+}
+
+@mixin max-md {
+  @media (max-width: #{$md - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin min-lg {
+  @media (min-width: #{$lg}) {
+    @content;
+  }
+}
+
+@mixin max-lg {
+  @media (max-width: #{$lg - 1px}) {
+    @content;
+  }
+}
+
+
+@mixin xl {
+  @media (min-width: #{$xl}) {
+    @content;
+  }
+}
+
+
+@mixin max-xl {
+  @media (max-width: #{$xl - 1px}) {
+    @content;
+  }
+}

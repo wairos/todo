@@ -1,0 +1,37 @@
+.pad {
+  @for $i from 1 through 24 {
+    &--#{$i*25} {
+      padding: #{$i*0.25}rem;
+    }
+
+    &--#{$i*25}t {
+      padding-top: #{$i*0.25}rem;
+    }
+
+    &--#{$i*25}b {
+      padding-bottom: #{$i*0.25}rem;
+    }
+
+    &--#{$i*25}l {
+      padding-left: #{$i*0.25}rem;
+    }
+
+    &--#{$i*25}r {
+      padding-right: #{$i*0.25}rem;
+    }
+
+    &--#{$i*25}tb,
+    &--#{$i*25}bt
+    {
+      padding-top: #{$i*0.25}rem;
+      padding-bottom: #{$i*0.25}rem;
+    }
+
+    &--#{$i*25}lr,
+    &--#{$i*25}rl,
+    {
+      padding-left: #{$i*0.25}rem;
+      padding-right: #{$i*0.25}rem;
+    }
+  }
+}
